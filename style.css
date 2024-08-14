@@ -1,0 +1,64 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+} 
+
+body{
+	background: url("bg.jpg") no-repeat;
+	background-size:cover;
+	overflow: hidden;
+}
+
+.sun{
+	position: absolute;
+	right: 0;
+	top: 5%;
+	animation:sunMove 40s linear forwards;
+
+	/*linear i used here animation same speed start to end*/
+	/*forwards i used here animation will stop at last keyframe*/
+
+}
+
+/*==== sun animation start ====*/
+
+@keyframes sunMove{
+	0%{
+		right: 0;
+	}
+
+	100%{
+		right: 61%;
+	}
+}
+
+
+.boat {
+    position: absolute;
+    top: 63%;
+    left: 14%;
+    animation: boatMove 40s linear infinite;
+}
+
+/* boat animation start here*/
+
+
+@keyframes boatMove{
+	0%{
+		 left: 14%;
+	}
+
+	100%{
+		left: 105%;
+	}
+}
+
+
+
+
+
+
+
+
+
